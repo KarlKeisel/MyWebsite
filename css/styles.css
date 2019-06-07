@@ -1,0 +1,120 @@
+/*font-family: 'Noto Serif', serif;*/
+/*font-family: 'Roboto Mono', sans-serif;*/
+
+body {
+    background-color: #111111;
+    color: #ffffff;
+    font-family: 'Noto Serif', serif;
+}
+
+hr {
+    background-color: #8f8f8f;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #111111;
+
+}
+
+.navbar-dark .navbar-brand {
+    color: #d65a31;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+
+}
+
+.navbar-brand {
+}
+
+/* Big grab */
+
+.hero-image {
+    background-image: url("../images/Digital WorldSM.jpg");
+    background-color: #000;
+    height: 700px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .4);
+}
+
+.hero-text {
+    color: #d65a31;
+    font-family: 'Roboto Mono', sans-serif;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+    padding-right: 3%;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 1s linear infinite alternate;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* About Me */
+
+.text {
+    margin: 3%;
+}
+
+.self-photo {
+    border-radius: 30%;
+    padding: 5%;
+    alignment: center;
+}
+
+/* Skills */
+
+#skills {
+    padding: 5% 7%;
+    background-color: #393e46;
+    text-align: center;
+    height: 500px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.testimonial-text {
+    display: block;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    height: 70px;
+    border-radius: 30%;
+    margin: 20px;
+}
+
+/* Call to Action */
+
+.footer {
+    padding: 5% 7%;
+    text-align: center;
+    color: #d65a31;
+}
+
+.bottom-text {
+    padding-bottom: 7%;
+}
+
+.link-button {
+    margin: 0 15px;
+}
