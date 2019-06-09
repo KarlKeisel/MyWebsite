@@ -33,6 +33,6 @@ function heroTextDisplay() {
     }, 6300);
 }
 
-heroTextDisplay();
 
-$(".cursor").fadeOut(100).fadeIn(100);
+
+heroTextDisplay();

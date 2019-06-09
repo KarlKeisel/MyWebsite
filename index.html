@@ -18,7 +18,8 @@
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:Black|Noto+Serif|Roboto+Mono&display=swap"
+          rel="stylesheet">
     <!-- Font Awesome Glyphs -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -34,7 +35,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-            <a class="navbar-brand" href="#">Karl Keisel</a>
+            <img class="navbar-brand img-fluid" src="images/Karl Logo.jpg" alt="Karl Logo">
 
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarToggler">
@@ -48,7 +49,7 @@
                         <a class="nav-link" href="#cta">Contact Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Works</a>
+                        <a class="nav-link" href="#works">My Works</a>
                     </li>
                 </ul>
 
@@ -62,7 +63,7 @@
 <section id="big-grab">
     <div class="hero-image">
         <div class="hero-text">
-            <h1>Real World Experience + <span class="hero-insert"></span><span class="cursor">|</span></h1>
+            <h1>Real World Experience + <br><span class="hero-insert"></span><span class="cursor">|</span></h1>
         </div>
     </div>
 </section>
@@ -72,19 +73,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 text">
-                <h5>Optician of 14 years turned programmer, I have worked in all areas of both large and small
-                    businesses.</h5>
-                <hr>
-                <h5>This has given me the knowledge of how the real world works dealing with clients, managers, and the
+                <h2>ABOUT ME</h2>
+                <hr class="text-left ml-2">
+                <p>Optician of 14 years turned programmer, I have worked in all areas of both large and small
+                    businesses.</p>
+                <p>This has given me the knowledge of how the real world works dealing with clients, managers, and the
                     people
                     under me. Using that real word commonsense and my growing knowledge of programming, I want your
                     company
                     and
-                    I to grow together.</h5>
+                    I to grow together.</p>
 
             </div>
-            <div class="col-md-5 float-right self-picture">
-                <img class="self-photo img-fluid" src="images/karl.png" alt="Karl-Photo">
+            <div class="col-md-4">
+                <img class="self-photo center-block" src="images/Karl.png" alt="My Photo">
             </div>
         </div>
     </div>
@@ -93,6 +95,10 @@
 <!--My Skills-->
 
 <section id="skills">
+    <div class="feature-title">
+        <h2>MY SKILLS</h2>
+        <hr>
+    </div>
 
     <div id="skillsCarousel" class="carousel slide" data-ride="False">
         <ol class="carousel-indicators">
@@ -104,8 +110,8 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <h4 class="testimonial-text">Python has been an amazing language to learn with its power for data
-                    analytics and web development.</h4>
+                <h4 class="testimonial-text">Python for its incredible uses in data and ability to work with nearly all
+                    other languages.</h4>
                 <img class="testimonial-image" src="images/003-python.png" alt="python-img">
                 <em>Python Programmer</em>
             </div>
@@ -137,7 +143,7 @@
         <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
-        <a class="carousel-control-next" href="#skillsCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next carousel-arrow" href="#skillsCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
@@ -145,10 +151,38 @@
 
 </section>
 
+<!-- Works -->
+
+<section id="works">
+    <div class="container-fluid">
+        <div class="feature-title text-right">
+            <h2>PORTFOLIO</h2>
+            <hr class="mr-2">
+        </div>
+        <div class="row works">
+            <div class="col-md-5">
+                <p class="text-center">Click to view working sample.</p>
+                <a href="https://karl-eyewear-sales.herokuapp.com/" target="_blank">
+                    <img class="work-picture img-fluid" src="images/Laptop%20img.jpg" alt="Eyeglass Sales Project"></a>
+            </div>
+            <div class="col-md-7 portfolio-text">
+                <h5>Eyewear Sales Website:</h5>
+                <br>
+                <p>This app uses Flask for the backend and is attached to a PostgreSQL database. Using an algorithm to
+                    generate fake patients and sales, it then plots those patients on a map to see patterns. It also
+                    uses machine learning to sort patients into how much money they might spend, letting the staff know
+                    which patients should have the highest priority. It is hosted online and will refresh itself nightly
+                    to keep its data current.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <!-- Call to Action -->
 
-<section id="#cta">
-    <div class="footer">
+<section id="cta">
+    <div class="cta">
         <h3 class="bottom-text">Reach out to me and lets make each other better.</h3>
         <button class="btn btn-lg btn-dark link-button" type="button"><i class="fab fa-github"></i> Github
         </button>
@@ -162,8 +196,7 @@
 <!-- Credits -->
 
 <footer id="footer">
-
-
+<h5 class="footer">WWW.KARLKEISEL.COM ALL RIGHTS RESERVED</h5>
 </footer>
 
 <!-- jQuery -->
