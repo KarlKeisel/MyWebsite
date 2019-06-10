@@ -135,7 +135,7 @@ hr {
 }
 
 .portfolio-text {
-    text-align: right;
+    text-align: left;
 }
 
 .work-picture {
@@ -151,12 +151,30 @@ hr {
     color: #40E0D0;
 }
 
+.form-control {
+    background-color: #222;
+    border-color: #40E0D0;
+    color: #888;
+}
+
 .bottom-text {
     padding-bottom: 7%;
 }
 
 .link-button {
     margin: 0 15px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0 50px;
+    margin-right: 25px;
+
+}
+
+.contact-buttons {
+    margin: 10px 0;
+    padding: 0;
 }
 
 
@@ -170,6 +188,19 @@ hr {
     font-size: 1rem;
 }
 
+.btn-outline-light {
+    color: #40E0D0;
+    border-color: #40E0D0;
+}
+
+.btn-outline-light:hover {
+    color: #000;
+    border-color: #40E0D0;
+    background-color: #40E0D0;
+}
+
+
+
 @media screen and (min-width: 400px) {
     #skillsCarousel {
         height: 350px;
@@ -179,6 +210,7 @@ hr {
         height: 550px;
     }
 }
+
 
 @media screen and (min-width: 600px) {
     #skillsCarousel {
@@ -190,6 +222,7 @@ hr {
     }
 }
 
+
 @media screen and (min-width: 800px) {
     #skillsCarousel {
         height: 350px;
@@ -199,3 +232,20 @@ hr {
         height: 550px;
     }
 }
+
+/* Change to single stack */
+
+@media (max-width: 768px) {
+    .bottom-text {
+        margin-top: 45px;
+    }
+
+    .portfolio-text {
+        margin-top: 45px;
+    }
+
+    .self-photo {
+
+    }
+}
+

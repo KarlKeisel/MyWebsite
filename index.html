@@ -167,12 +167,14 @@
             </div>
             <div class="col-md-7 portfolio-text">
                 <h5>Eyewear Sales Website:</h5>
-                <br>
                 <p>This app uses Flask for the backend and is attached to a PostgreSQL database. Using an algorithm to
                     generate fake patients and sales, it then plots those patients on a map to see patterns. It also
                     uses machine learning to sort patients into how much money they might spend, letting the staff know
                     which patients should have the highest priority. It is hosted online and will refresh itself nightly
                     to keep its data current.</p>
+                <h5>Skills Used:</h5>
+                <p>Backend: Python, Scikit-Learn, PostgreSQL</p>
+                <p>Frontend: Flask Web Framework, Bootstrap</p>
             </div>
         </div>
     </div>
@@ -182,21 +184,63 @@
 <!-- Call to Action -->
 
 <section id="cta">
-    <div class="cta">
-        <h3 class="bottom-text">Reach out to me and lets make each other better.</h3>
-        <button class="btn btn-lg btn-dark link-button" type="button"><i class="fab fa-github"></i> Github
-        </button>
-        <button class="btn btn-lg btn-light link-button" type="button"><i class="fab fa-linkedin"></i> LinkedIn
-        </button>
-        <button class="btn btn-lg btn-light link-button" type="button"><i class="fas fa-envelope"></i> E-Mail
-        </button>
+    <div class="cta row">
+        <div class="col-md-6">
+            <h2>CONTACT ME</h2>
+            <p>If you have any questions, please let me know!</p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <!--                        <label for="inputName"></label>-->
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <!--                        <label for="inputEmail"></label>-->
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!--                    <label for="inputSubject"></label>-->
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <!--                    <label for="inputMessage"></label>-->
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light float-right">Send</button>
+            </form>
+            <br>
+        </div>
+        <div class="col-md-6">
+            <h3 class="bottom-text">Reach out to me and lets make each other better.</h3>
+            <div class="text-center">
+                <ul class="contact-list">
+                    <li class="contact-buttons">
+                        <a href="https://github.com/KarlKeisel" target="_blank" class="btn btn-lg btn-outline-light link-button btn-block"><i
+                                class="fab fa-github"></i> Github
+                        </a>
+                    </li>
+                    <li class="contact-buttons">
+                        <a href="https://www.linkedin.com/in/karl-keisel-199572180/" target="_blank" class="btn btn-lg btn-outline-light link-button btn-block"><i
+                                class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li class="contact-buttons">
+                        <button class="btn btn-lg btn-outline-light link-button btn-block" type="button"><i
+                                class="fas fa-envelope"></i> KarlKeisel83@Gmail.Com
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </section>
 
 <!-- Credits -->
 
 <footer id="footer">
-<h5 class="footer">WWW.KARLKEISEL.COM ALL RIGHTS RESERVED</h5>
+    <h5 class="footer">WWW.KARLKEISEL.COM ALL RIGHTS RESERVED</h5>
 </footer>
 
 <!-- jQuery -->
