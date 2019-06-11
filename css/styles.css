@@ -92,6 +92,10 @@ hr {
     margin: 3%;
 }
 
+.photo-column {
+    text-align: center;
+}
+
 .self-photo {
     border-radius: 30%;
     padding: 5%;
@@ -155,6 +159,11 @@ hr {
     background-color: #222;
     border-color: #40E0D0;
     color: #888;
+}
+
+.form-control:focus {
+    background-color: #8f8f8f;
+    color: #111111;
 }
 
 .bottom-text {
@@ -235,17 +244,28 @@ hr {
 
 /* Change to single stack */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .bottom-text {
         margin-top: 45px;
     }
 
     .portfolio-text {
+        margin-top: 15px;
+    }
+
+    .portfolio-title {
+        text-align: left;
+    }
+
+    .portfolio-hr {
+        margin: 0 2px;
+    }
+
+    .work-text {
         margin-top: 45px;
     }
 
-    .self-photo {
-
-    }
 }
+
+
 

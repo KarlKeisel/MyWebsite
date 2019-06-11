@@ -72,7 +72,7 @@
 <section id="about-me">
     <div class="container">
         <div class="row">
-            <div class="col-md-7 text">
+            <div class="col-lg-7 text">
                 <h2>ABOUT ME</h2>
                 <hr class="text-left ml-2">
                 <p>Optician of 14 years turned programmer, I have worked in all areas of both large and small
@@ -85,7 +85,7 @@
                     I to grow together.</p>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 photo-column">
                 <img class="self-photo center-block" src="images/Karl.png" alt="My Photo">
             </div>
         </div>
@@ -156,16 +156,16 @@
 <section id="works">
     <div class="container-fluid">
         <div class="feature-title text-right">
-            <h2>PORTFOLIO</h2>
-            <hr class="mr-2">
+            <h2 class="portfolio-title">PORTFOLIO</h2>
+            <hr class="mr-2 portfolio-hr">
         </div>
         <div class="row works">
-            <div class="col-md-5">
-                <p class="text-center">Click to view working sample.</p>
+            <div class="col-lg-5 order-lg-2 order-md-2">
+                <p class="text-center work-text">Click to view working sample.</p>
                 <a href="https://karl-eyewear-sales.herokuapp.com/" target="_blank">
                     <img class="work-picture img-fluid" src="images/Laptop%20img.jpg" alt="Eyeglass Sales Project"></a>
             </div>
-            <div class="col-md-7 portfolio-text">
+            <div class="col-lg-7 order-lg-2 order-md-1 portfolio-text">
                 <h5>Eyewear Sales Website:</h5>
                 <p>This app uses Flask for the backend and is attached to a PostgreSQL database. Using an algorithm to
                     generate fake patients and sales, it then plots those patients on a map to see patterns. It also
@@ -185,33 +185,33 @@
 
 <section id="cta">
     <div class="cta row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <h2>CONTACT ME</h2>
             <p>If you have any questions, please let me know!</p>
-            <form>
+            <form action="https://formspree.io/karlkeisel83@gmail.com" method="POST">
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-lg-6">
                         <!--                        <label for="inputName"></label>-->
-                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-lg-6">
                         <!--                        <label for="inputEmail"></label>-->
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="name">
                     </div>
                 </div>
                 <div class="form-group">
                     <!--                    <label for="inputSubject"></label>-->
-                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="name">
                 </div>
                 <div class="form-group">
                     <!--                    <label for="inputMessage"></label>-->
-                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Message"></textarea>
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Message" name="name"></textarea>
                 </div>
                 <button type="submit" class="btn btn-outline-light float-right">Send</button>
             </form>
             <br>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <h3 class="bottom-text">Reach out to me and lets make each other better.</h3>
             <div class="text-center">
                 <ul class="contact-list">
