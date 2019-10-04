@@ -34,5 +34,4 @@ function heroTextDisplay() {
 }
 
 
-
 heroTextDisplay();
