@@ -213,9 +213,6 @@ hr {
         height: 350px;
     }
 
-    #skills {
-        height: 550px;
-    }
 }
 
 
@@ -235,9 +232,6 @@ hr {
         height: 350px;
     }
 
-    #skills {
-        height: 550px;
-    }
 }
 
 /* Change to single stack */
@@ -280,7 +274,13 @@ hr {
         margin-top: 45px;
     }
 
+    #skills {
+        height: 600px;
+    }
 }
 
-
-
+@media (max-width: 768px) {
+    #skills {
+        height: 1000px;
+    }
+}
