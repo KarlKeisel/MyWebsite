@@ -129,20 +129,103 @@ hr {
 /* Skills - Text and Star Lipstick */
 
 
-
 /* Portfolio */
 
 #works {
     padding: 3% 7%;
 }
 
+.portfolio-image {
+    width: 32%;
+    float: left;
+}
+
 .portfolio-text {
     text-align: left;
+    float: left;
+    width: 65%;
+    padding: 0 5%;
 }
 
 .work-picture {
 
 }
+
+/* Portfolio 2.0 */
+/* Sizing / Responsiveness */
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slider-nav div::before {
+	content: "";
+	display: block;
+	/*padding-top: 75%;*/
+}
+
+.slider {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slider-thumbnail {
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-header {
+    padding: 3% 7% 0 7%;
+}
+
+/* Portfolio 'Lipstick' */
+
+#works {
+    background-color: #000000;
+}
+
+.slider-nav {
+    /*background-color: #393E46;*/
+}
+
+.slick-arrow {
+    background-color: #00adb5;
+    border-radius: 50%;
+}
+
+.slick-arrow:hover {
+    background-color: #00adb5;
+    border-radius: 50%;
+}
+
 
 /* Call to Action */
 
@@ -205,7 +288,6 @@ hr {
     border-color: #40E0D0;
     background-color: #40E0D0;
 }
-
 
 
 @media screen and (min-width: 400px) {
@@ -276,6 +358,18 @@ hr {
 
     #skills {
         height: 600px;
+    }
+
+    .portfolio-image {
+        float: none;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .portfolio-text {
+        float: none;
+        width: 80%;
+        justify-content: center;
     }
 }
 

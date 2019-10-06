@@ -24,6 +24,9 @@
     <!-- Font Awesome Glyphs -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Slick Carousel Addon -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
@@ -229,47 +232,102 @@
 </section>
 
 <!-- Works -->
-<!-- TODO Work on having multiple works on display. (Another carousel with side bar?)-->
 <section id="works">
+    <div class="feature-title portfolio-header text-right">
+        <h2 class="portfolio-title">PORTFOLIO</h2>
+        <hr class="mr-2 portfolio-hr">
+    </div>
 
-    <div class="container-fluid">
-        <div class="feature-title text-right">
-            <h2 class="portfolio-title">PORTFOLIO</h2>
-            <hr class="mr-2 portfolio-hr">
+    <div class="row">
+        <div class="col-lg-10">
+            <div class="slider slider-single">
+
+                <!-- Eyewear Sales Site -->
+                <div class="works">
+                    <div class="portfolio-image">
+                        <p class="text-center work-text">Click to view working sample.</p>
+                        <a href="http://www.eyewear-sales.karlkeisel.com/" target="_blank">
+                            <img class="work-picture img-fluid" src="images/Laptop.png"
+                                 alt="Eyeglass Sales Project"></a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h5>Eyewear Sales Website:</h5>
+                        <p>This app uses Flask for the backend and is attached to a PostgreSQL database. Using an
+                            algorithm
+                            to generate fake patients and sales, it then plots those patients on a map to see
+                            patterns.
+                            It
+                            also uses machine learning to sort patients into how much money they might spend,
+                            letting
+                            the
+                            staff know which patients should have the highest priority. It is hosted online and will
+                            refresh
+                            itself nightly to keep its data current.</p>
+                        <h5>Skills Used:</h5>
+                        <p>Backend: Python, Scikit-Learn, PostgreSQL</p>
+                        <p>Frontend: Flask Web Framework, Bootstrap</p>
+                    </div>
+                </div>
+
+                <!-- React Star Wars API -->
+                <div class="works">
+                    <div class="portfolio-image">
+                        <p class="text-center work-text">Click to view working sample.</p>
+                        <a href="http://www.reactswapi.karlkeisel.com/" target="_blank">
+                            <img class="work-picture img-fluid" src="images/Deathstar.png"
+                                 alt="React API Project"></a>
+                    </div>
+                    <div class="portfolio-text">
+                        <h5>React Star Wars API:</h5>
+                        <p>This app is built using React to represent an interactive front-end to an api full of Star
+                            Wars data. It can tell when an item should be a hyperlink and allows you to jump between
+                            entries.</p>
+                        <h5>Skills Used:</h5>
+                        <p>Backend: https://swapi.co/api/</p>
+                        <p>Frontend: React, Bootstrap</p>
+                    </div>
+                </div>
+
+                <!-- React Star Wars API -->
+                <div class="works">
+                    <div class="portfolio-image">
+                        <p class="text-center work-text">You're already visiting this sample.</p>
+                        <img class="work-picture img-fluid" src="images/Red%20Eye.png"
+                             alt="Linux Server">
+                    </div>
+                    <div class="portfolio-text">
+                        <h5>Linux Server Control:</h5>
+                        <p>I have learned the skills to set up and launch multiple web apps on a linux server. I learned
+                            how to set up the correct safety precautions such as firewall and SSH only access. Through
+                            this server I have successfully launched all the web apps features, which include a python
+                            and react app in full production build. I have also set up a cron job for the python app to
+                            keep it updated.</p>
+                        <h5>Skills Used:</h5>
+                        <p>Backend: Ubuntu 18.04, UFW, SSH Keys and Git to keep apps updated.</p>
+                        <p>Launched Apps: Python (Flask), React, Standard HTML</p>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-
-        <div class="row works">
-            <div class="col-lg-4 order-lg-2 order-md-2">
-                <p class="text-center work-text">Click to view working sample.</p>
-                <a href="http://www.eyewear-sales.karlkeisel.com/" target="_blank">
-                    <img class="work-picture img-fluid" src="images/Laptop%20img.jpg"
-                         alt="Eyeglass Sales Project"></a>
-            </div>
-            <div class="col-lg-6 order-lg-2 order-md-1 portfolio-text">
-                <h5>Eyewear Sales Website:</h5>
-                <p>This app uses Flask for the backend and is attached to a PostgreSQL database. Using an
-                    algorithm
-                    to generate fake patients and sales, it then plots those patients on a map to see
-                    patterns.
-                    It
-                    also uses machine learning to sort patients into how much money they might spend,
-                    letting
-                    the
-                    staff know which patients should have the highest priority. It is hosted online and will
-                    refresh
-                    itself nightly to keep its data current.</p>
-                <h5>Skills Used:</h5>
-                <p>Backend: Python, Scikit-Learn, PostgreSQL</p>
-                <p>Frontend: Flask Web Framework, Bootstrap</p>
-            </div>
-            <div class="col-lg2 d-none d-lg-block">
-
-
-            </div>
+        <div class="col-lg-2">
+            <section class="slider-nav slider">
+                <div>
+                    <img class="slider-thumbnail" src="./images/thumbnails/Eyewear-Sales.jpg" alt="Python, SQL">
+                </div>
+                <div>
+                    <img class="slider-thumbnail" src="./images/thumbnails/Reactswapi.png" alt="Javascript, React">
+                </div>
+                <div>
+                    <img class="slider-thumbnail" src="./images/thumbnails/Server.jpg" alt="Linux, Git">
+                </div>
+            </section>
         </div>
     </div>
-</section>
+    </div>
 
+</section>
 <!-- Call to Action -->
 
 <section id="cta">
@@ -337,6 +395,9 @@
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Slick Carousel Addon -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="index.js" charset="UTF-8"></script>
 </body>
 </html>
