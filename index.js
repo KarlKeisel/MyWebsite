@@ -51,7 +51,7 @@ $('.slider-nav')
         $('.slider-nav .slick-slide.slick-current').addClass('is-active');
     })
     .slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
         focusOnSelect: true,
